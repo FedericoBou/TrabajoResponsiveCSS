@@ -64,15 +64,19 @@ a{
 }
 .social{
     flex: 1 1 auto;
-    /* display: flex; */
+    display: flex;
     justify-content: center;
     align-items: center;
+    border-left: solid;
+    border-color: #ce1f6a;
+    
 }
 .social a{
     font-size: 15px;
     color: #ce1f6a;
     width: 100%;
     margin: 20px;
+  
 }
 .social a:hover{
     color:#f66f00;
@@ -252,8 +256,8 @@ h1{
 
 }
 .menu .logo img{
-    width: 25%;
-    height: 25%;
+    width: 20%;
+    height: 20%;
 }
 }
 @media all and (max-width: 800px){
@@ -261,25 +265,33 @@ h1{
     flex-direction: column;
 }
 .menu .logo img{
-    width: 25%;
-    height: 25%;
+    width: 20%;
+    height: 20%;
 }
-
+.menu{
+    flex-direction: inline;
+}
+h1{ 
+    font-size: 20px;
+}
 }
 @media all and (max-width: 600px){
 .aside{
     flex-direction: column;
 }
 h1{
-    font-size: 15px;
+    font-size: 13px;
 }
 .menu{
-    flex-direction:inline; 
+    flex-direction:inline;
+}
+.menu .logo{
+    flex: 20px;
+    margin-right: 5px;
+    margin-top: 5px ;
 }
 .menu .logo img{
-    min-width: 25%;
-    min-height: 25%;
-    max-width: 25%;
-    max-height: 25%;  
+    width: 50px;
+    height: 50px;
 }
 }
